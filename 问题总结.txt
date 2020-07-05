@@ -1,0 +1,10 @@
+1.controller中映射找不到问题
+        在impl模块中添加servlet和jsp依赖
+2.controller返回jsp源码页面
+        在web.xml的dispatcherServlet中的URLpattern设置为/如果为/*的话就会出问题
+3.向页面返回json数据报500
+        需要添加json的相关配置
+4.匹配的通配符很严格，但还未找到‘tx-advice’的声明 org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException
+        在spring.xml中加入xsi-schemaLocation 的相关约束
+5.【项目启动报错】Caused by: java.lang.ClassNotFoundException: org.springframework.core.log.LogMessage
+        模块中的spring的版本不一致
